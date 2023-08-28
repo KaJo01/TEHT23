@@ -5,7 +5,7 @@ import Todo from './Todo';
 function TodoList() {
     const [todos, setTodos] = useState([])
 
-    const addTodo = todo => {
+    const addTodo=todo=> {
         //poistetaan ylimääräiset välilyönnit tekstistä
         if (!todo.text || /^\s*$/.test(todo.text)) {
             return;
